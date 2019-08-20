@@ -46,6 +46,7 @@ Two datasets that reside in S3(AWS simple storage service):
 ---
 # Files in the repository
 The project workspace includes three files:
-- **_etl.py_** reads data from S3, processes that data using Spark, and writes them back to S3.
+- **_etl.py_** reads data from S3, processes that data using Spark,<br>
+and writes them back to S3.
 - **_dl.cfg_** contains AWS credentials.
 - **_README.md_** provides discussion on the project.
