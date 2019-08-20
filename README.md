@@ -8,36 +8,32 @@ As their use base and song data have grown even more, they decide to move their 
 ### Datasets
 Two datasets that reside in S3(AWS simple storage service):
 
-1.**Song Dataset**
+1.**Song Dataset**<br>
     > Each file is in JSON format and contains metadata about a song and the artist of that song. <br>
     > File names are like 'song_data/A/B/C/TRABCEI128F424C983.json' etc. <br>
-    > In each file, data are like: {"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}
-2.**Log Dataset**
+    > In each file, data are like: {"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}<br>
+2.**Log Dataset**<br>
     > Each file is in JSON format and contains logs on user activity on the app <br>
     > File names are like 'log_data/2018/11/2018-11-12-events.json' etc. <br>
-    > below is an example of what the data in a log file, 2018-11-12-events.json, looks like
-
-![](screenshots/log-data.png)
     
 
 ### Tasks
-1.**Extract data from _S3_**
+1.**Extract data from _S3_**<br>
     > extract song data from S3<br>
     > extract log data from S3<br>
-2.**Process data into analytics tables using _Spark_**
+2.**Process data into analytics tables using _Spark_**<br>
     > fact table: songplays<br>
     > dimension tables: users, songs, artists, time<br>
-3.**Load data back into _S3_>**
-    > data stored in parquet files
+3.**Load data back into _S3_>**<br>
+    > data stored in parquet files<br>
 
-
+---
 # To run the Python scripts
-1.Get _Access Key_ from IAM_USERS to fill dl.cfg file
-2.Click _File -> New -> Console_ at top menu
-3.Select kernel _Python3_
-4.Type `%run etl.py` in the console cell
-5.Click _Run -> Run selected cell_ at top menu
-
+1.Get _Access Key_ from IAM_USERS to fill dl.cfg file<br>
+2.Click _File -> New -> Console_ at top menu<br>
+3.Select kernel _Python3_<br>
+4.Type `%run etl.py` in the console cell<br>
+5.Click _Run -> Run selected cell_ at top menu<br>
         
 ---
 # Files in the repository
